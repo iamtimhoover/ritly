@@ -2,7 +2,8 @@
 
 <% @urls.each do |url|%>
 
-<p>Link: <%= url.link %> | <%= url.hash_code %></p>
-
+	<p>Link: <%= url.link %> | <%= url.hash_code %></p>
 
 <% end %>
+
+<%= link_to 'Generate another code.', new_url_path %>

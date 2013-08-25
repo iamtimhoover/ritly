@@ -1,2 +1,17 @@
-<h1>Urls#show</h1>
-<p>Find me in app/views/urls/show.html.erb</p>
+<h2>Sweet!</h2>
+
+<p>
+	Your randomly generated code is: <%= @url.hash_code %>
+</p>
+
+<p>
+	You can go to 
+	<%= link_to root_path do %> 
+		localhost:3000/<%= @url.hash_code %>
+	<% end %>
+	to visit your url
+</p>
+
+<p>
+	<%= link_to 'Generate another code.', new_url_path %>
+</p>

@@ -13,10 +13,17 @@ class UrlsController < ApplicationController
   	@url.hash_code = rand(100000)
   	
   	if @url.save
-  		redirect_to urls_path
+  		redirect_to url_path(@url)
   	end
 	end
 
   def show
+  	@url = Url.find(params[:id])
+  end
+
+  def redirectors
+  end
+
+  def preview
   end
 end

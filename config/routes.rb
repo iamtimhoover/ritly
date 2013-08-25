@@ -1,6 +1,8 @@
 Ritly::Application.routes.draw do
   root 'home#index'
   resources :urls
+  get '/:some_totally_random_value', to: 'urls#redirectors'
+  get '/:some_totally_random_value/preview', to: 'urls#preview'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
