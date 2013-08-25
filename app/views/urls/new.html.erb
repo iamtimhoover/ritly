@@ -1,3 +1,7 @@
 <h2>Enter your URL link below.</h2>
 
-form goes here.
+<%= form_for @url do |f| %>
+	<%= f.label :link %>
+	<%= f.text_field :link %>
+	<%= f.submit %>
+<% end %>

@@ -1,1 +1,8 @@
-<h1>index</h1>
+<h1>Show all URLs</h1>
+
+<% @urls.each do |url|%>
+
+<p>Link: <%= url.link %> | <%= url.hash_code %></p>
+
+
+<% end %>
