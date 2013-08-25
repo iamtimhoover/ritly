@@ -6,10 +6,10 @@
 
 <p>
 	You can go to 
-	<%= link_to root_path do %> 
+	<%= link_to @url.link do %> 
 		localhost:3000/<%= @url.hash_code %>
 	<% end %>
-	to visit your url
+	<span>to visit your url.</span>
 </p>
 
 <p>
